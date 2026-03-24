@@ -172,7 +172,10 @@ print("🔥 Bot Running...")
 
 while True:
     try:
-        bot.infinity_polling(timeout=60, long_polling_timeout=60)
+        bot.infinity_polling(
+            timeout=60,
+            long_polling_timeout=60
+        )
     except Exception as e:
         print("Error:", e)
         time.sleep(5)
